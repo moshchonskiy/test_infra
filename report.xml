@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?><testsuite errors="0" failures="5" name="pytest" skips="0" tests="6" time="24.444"><testcase classname="tests.test_nginx" file="tests/test_nginx.py" line="44" name="test_nginx_is_installed" time="14.014592886"><failure message="AssertionError: Nginx is not installed!
+assert False
+ +  where False = &lt;package nginx&gt;.is_installed">nginx = &lt;package nginx&gt;
+
+    def test_nginx_is_installed(nginx):
+&gt;       assert_nginx_is_installed(nginx)
+
+tests/test_nginx.py:46: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+nginx = &lt;package nginx&gt;
+
+    def assert_nginx_is_installed(nginx):
+&gt;       assert nginx.is_installed, &apos;Nginx is not installed!&apos;
+E       AssertionError: Nginx is not installed!
+E       assert False
+E        +  where False = &lt;package nginx&gt;.is_installed
+
+tests/test_nginx.py:42: AssertionError</failure></testcase><testcase classname="tests.test_nginx" file="tests/test_nginx.py" line="50" name="test_nginx_is_accessible_dns" time="0.00071120262146"><failure message="AssertionError: Public DNS is not provided!
+assert &apos;&apos;">public_dns = &apos;&apos;
+
+    def test_nginx_is_accessible_dns(public_dns):
+&gt;       assert public_dns, &quot;Public DNS is not provided!&quot;
+E       AssertionError: Public DNS is not provided!
+E       assert &apos;&apos;
+
+tests/test_nginx.py:52: AssertionError</failure></testcase><testcase classname="tests.test_nginx" file="tests/test_nginx.py" line="56" name="test_instance_is_accessible_ssh" time="0.000575065612793"></testcase><testcase classname="tests.test_nginx" file="tests/test_nginx.py" line="60" name="test_nginx_listens_port" time="3.41892647743"><failure message="AssertionError: Nginx is not installed!
+assert False
+ +  where False = &lt;package nginx&gt;.is_installed">ssh = &lt;testinfra.host.Host object at 0x10c3aa750&gt;, nginx = &lt;package nginx&gt;
+
+    def test_nginx_listens_port(ssh, nginx):
+&gt;       assert_nginx_is_installed(nginx)
+
+tests/test_nginx.py:62: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+nginx = &lt;package nginx&gt;
+
+    def assert_nginx_is_installed(nginx):
+&gt;       assert nginx.is_installed, &apos;Nginx is not installed!&apos;
+E       AssertionError: Nginx is not installed!
+E       assert False
+E        +  where False = &lt;package nginx&gt;.is_installed
+
+tests/test_nginx.py:42: AssertionError</failure></testcase><testcase classname="tests.test_nginx" file="tests/test_nginx.py" line="66" name="test_nginx_proper_config" time="3.62020087242"><failure message="AssertionError: Nginx is not installed!
+assert False
+ +  where False = &lt;package nginx&gt;.is_installed">ssh = &lt;testinfra.host.Host object at 0x10c3aa750&gt;, nginx = &lt;package nginx&gt;
+
+    def test_nginx_proper_config(ssh, nginx):
+&gt;       assert_nginx_is_installed(nginx)
+
+tests/test_nginx.py:68: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+nginx = &lt;package nginx&gt;
+
+    def assert_nginx_is_installed(nginx):
+&gt;       assert nginx.is_installed, &apos;Nginx is not installed!&apos;
+E       AssertionError: Nginx is not installed!
+E       assert False
+E        +  where False = &lt;package nginx&gt;.is_installed
+
+tests/test_nginx.py:42: AssertionError</failure></testcase><testcase classname="tests.test_nginx" file="tests/test_nginx.py" line="72" name="test_nginx_log_is_configured" time="3.16647458076"><failure message="AssertionError: Nginx is not installed!
+assert False
+ +  where False = &lt;package nginx&gt;.is_installed">public_dns = &apos;&apos;, ssh = &lt;testinfra.host.Host object at 0x10c3aa750&gt;, nginx = &lt;package nginx&gt;
+
+    def test_nginx_log_is_configured(public_dns, ssh, nginx):
+&gt;       assert_nginx_is_installed(nginx)
+
+tests/test_nginx.py:74: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+nginx = &lt;package nginx&gt;
+
+    def assert_nginx_is_installed(nginx):
+&gt;       assert nginx.is_installed, &apos;Nginx is not installed!&apos;
+E       AssertionError: Nginx is not installed!
+E       assert False
+E        +  where False = &lt;package nginx&gt;.is_installed
+
+tests/test_nginx.py:42: AssertionError</failure></testcase></testsuite>
